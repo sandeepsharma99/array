@@ -10,18 +10,17 @@ def sec_largest(array):
     if not array:
         return -1
     else :
-        for i in range(n):
-            if array[i]>largest:
+        for num in array:
+            if num>largest:
                 sec_largest = largest
-                largest = array[i]
+                largest = num
             
-            elif array[i]>sec_largest and array[i]<largest:
-                sec_largest = array[i]
+            elif num>sec_largest and num<largest:
+                sec_largest = num
 
         return sec_largest, largest
 
 
-# array = [1,2,4,7,7,5,8,6]
-array = []
+array = [1,2,4,7,7,5,8,6]
 
 print(sec_largest(array))

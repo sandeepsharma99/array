@@ -25,3 +25,6 @@ arr1 = [1,3,5,9,10]
 arr2 = [0,2,3,5,4,7,9,6,3,2]
 
 print(intersection(arr1, arr2))
+
+# TC O(n1 + n2)
+# SC O(1)

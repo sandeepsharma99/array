@@ -1,3 +1,5 @@
+
+
 def intersection(arr1, arr2):
     n = len(arr1)
     m = len(arr2)
@@ -11,9 +13,10 @@ def intersection(arr1, arr2):
         elif arr1[i] > arr2[j]:
             j+=1
         else :
-            intersec.append(arr1[i])
-            i+=1
-            j+=1
+            if not intersec or arr1[i] != intersec[-1]: # is empty and different
+                intersec.append(arr1[i])
+                i+=1
+                j+=1
 
     return intersec
 

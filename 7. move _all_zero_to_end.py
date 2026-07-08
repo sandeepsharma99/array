@@ -3,7 +3,7 @@ def move_zero(array):
     i = 0
     for j in range(n):
         if array[j]!=0: # if it is different
-            array[i], array[j] = array[j], array[i]
+            array[i], array[j] = array[j], array[i] # swap position
             i+=1
 
     return array

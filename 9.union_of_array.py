@@ -20,7 +20,9 @@ def union_of_array(arr1, arr2):
     i = j = 0
     ans = []
 
-    while i < len(arr1) and j < len(arr2):
+    # we'r putting smaller ele as it is sorted array and we 'r going left to right
+    # we'll check conditoin while putting
+    while i < len(arr1) and j < len(arr2):  # till any array ends
         if arr1[i] < arr2[j]:
             if not ans or ans[-1] != arr1[i]:
                 ans.append(arr1[i])
@@ -34,12 +36,14 @@ def union_of_array(arr1, arr2):
                 ans.append(arr1[i])
             i += 1
             j += 1
+    # if either one of them is finished
 
+    # if Array arr2 has finished. Process whatever is left in a.
     while i < len(arr1):
         if not ans or ans[-1] != arr1[i]:
             ans.append(arr1[i])
         i += 1
-
+    # if Array arr2 has finished. Process whatever is left in a.
     while j < len(arr2):
         if not ans or ans[-1] != arr2[j]:
             ans.append(arr2[j])

@@ -7,7 +7,7 @@ def intersection(arr1, arr2):
     j = 0
     intersec = []
     
-    while i<n and j<m :
+    while i<n and j<m :  # till any array ends
         if arr1[i]<arr2[j] :
             i+=1
         elif arr1[i] > arr2[j]:

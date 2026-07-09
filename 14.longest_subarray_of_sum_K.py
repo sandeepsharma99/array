@@ -58,7 +58,9 @@
 
 #     return max_len
 
-#<--------------------Two pinter------------------------------->
+#<--------------------Two ponter------------------------------->
+# TC O(2n) SC O(1)
+
 # def longest_subarray_with_sum_k(nums, k) :
 #     summ = 0
 #     i = j = 0
@@ -115,10 +117,10 @@ def longest_subarray_with_sum_k(nums, k):
 
         # Found a valid subarray
         if summ == k:
-            if j - i + 1 > max_len:
-                max_len = j - i + 1
-                st = i
-                ed = j
+            max_len = max(max_len,j-i+1)
+                
+            st = i
+            ed = j
 
         j += 1
 

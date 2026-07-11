@@ -5,6 +5,7 @@ def majority_element(array) :
     for num in array :
         if count == 0 :
             ele = num
+            count = 1
         elif ele == num :
             count += 1
         else :

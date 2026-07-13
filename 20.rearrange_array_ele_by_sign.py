@@ -31,3 +31,5 @@ def rearrange(array) :
 array = [3,1,-2,-5,2,-4,2,4]
 
 print(rearrange(array))
+
+# TC O(n) sc  O(n)

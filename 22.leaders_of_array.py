@@ -14,3 +14,5 @@ def leaders(array) :
 
 array = [16, 17, 4, 3, 5, 2]
 print(leaders(array))
+
+# TC O(N) 

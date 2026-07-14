@@ -12,14 +12,13 @@ def longest_successive_elements(array):
     for num in st:
 
         # Check if num is the start of a sequence
-        if num - 1 not in st:
-
+        if num - 1 not in st: # previous is not in set
             cnt = 1
-            x = num
+            last_smaller = num
 
             # Count consecutive numbers
-            while x + 1 in st:
-                x = x + 1
+            while last_smaller + 1 in st: 
+                last_smaller = last_smaller + 1
                 cnt += 1
 
             longest = max(longest, cnt)

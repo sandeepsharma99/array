@@ -7,9 +7,9 @@ def find_all_subarrays_with_given_sum(arr, k):
 
     for num in arr:
         pre_sum += num
-        remove = pre_sum - k
+        x = pre_sum - k
 
-        count += mpp.get(remove, 0)
+        count += mpp.get(x, 0)
         mpp[pre_sum] = mpp.get(pre_sum, 0) + 1
 
     return count

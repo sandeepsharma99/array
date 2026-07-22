@@ -1,4 +1,6 @@
 
+# watch video i added print suarray logic
+
 def max_len(arr):
     mpp = {}
     max_len = 0
@@ -8,6 +10,7 @@ def max_len(arr):
     end = -1
 
     for i in range(len(arr)):
+
         total += arr[i]
 
         if total == 0:
@@ -18,7 +21,7 @@ def max_len(arr):
         else:
             if total in mpp:
                 length = i-mpp[total]
-                max_len = max(max_len, length)
+                max_len = max(max_len, length) 
                 start = mpp[total]+1
                 end = i
             else:

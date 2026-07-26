@@ -34,3 +34,6 @@ def find_missing_repeating_numbers(arr):
 
 arr = [4,3,6,2,1,1]
 print(find_missing_repeating_numbers(arr))
+
+
+

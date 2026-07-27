@@ -27,7 +27,7 @@ def find_missing_repeating_numbers(arr):
     # Repeating number (x)
     x = (val1 + val2) // 2
 
-    # Missing number (y)
+    # Missing number (y) 
     y = x - val1
 
     return [x, y]

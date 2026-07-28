@@ -74,3 +74,4 @@ class Solution:
                 break
 
             gap = (gap // 2) + (gap % 2)
+

@@ -40,11 +40,11 @@ print(find_missing_repeating_numbers(arr))
 """gfchjkl;jhgjkltfgjlhjkhgfhgjk
 ghjkljhgfghjklkjhertyguhijloiuytrrftyuio
 ghjghjkgghjbhvgvhmbnhbhn
-rtgyhujikolpoiuythj
+rtgyhujolpoiuythj
 rthgyjukilo;iuytfghjkl;
 xcvbnm,mnbvcxvbnm,
 sdfghjklkjhgfdghjlk;;kjhgfd
-rtyl;kjhgfhgjhkjlkhgjjhkj
+rtyl;kjhgfhgkjlkhgjjhkj
 tyuiljfdghjkljhgfhjk
 dgfhjkl;jghfghjk;ljhgfhjkljhgfch
 fghjkl;jfdsdfghjkhgfdgbv"""

@@ -1,7 +1,7 @@
 def largest( array):
     n = len(array)
     largest = 1 # any random smaller value  
-    for i in range(n):
+    for i in range(n): # loop n times
         if array[i] > largest:
             largest = array[i]
     

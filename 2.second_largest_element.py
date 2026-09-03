@@ -1,7 +1,6 @@
 def sec_largest(array):
-    sorted(array, reverse=True)
-    # 
-    largest = float("-inf")
+    sorted(array, reverse=True)   # [8, 7, 7, 6, 5, 4, 2, 1]
+    largest = float("-inf") # negative infinity
     sec_largest = float("-inf")
     n = len(array)
 

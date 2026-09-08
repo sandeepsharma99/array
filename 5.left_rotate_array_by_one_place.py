@@ -3,7 +3,7 @@ def rotate_by_one(array):
     n = len(array)
     temp = array[0]
     
-    for i in range(1,n):
+    for i in range(1,n): # (start, stop)
         array[i-1] = array[i]
         
     array[n-1] = temp

@@ -26,9 +26,9 @@ def target_summ_subarray(array, k):
     hash_map = {}
     ans = []
     for i in range(len(array)):
-        n = k - array[i]
+        n = k - array[i]  #  complement  
         hash_map[array[i]] = i
-    # 1. If the required number exists in dictionary
+    # 1. If the required number(complement) exists in dictionary
     # 2. Make sure it's not the same index
         if n in hash_map and hash_map[n] != i:
             ans.append([array[hash_map[n]], array[i]]) # appending the value usin index
